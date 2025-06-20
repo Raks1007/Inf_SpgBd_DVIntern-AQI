@@ -121,27 +121,6 @@ def dashboard():
         width= 850, height=600,
     )
 
-# def add_bg_from_local(image_file, opacity):
-#     with open(image_file, "rb") as file:
-#         image_data = file.read()
-#     encoded_string = "data:image/png;base64," + base64.b64encode(image_data).decode()
-#     bg_css = f"""
-#     <style>
-#     .stApp {{
-#         background: linear-gradient(rgba(255, 255, 255, {opacity}), rgba(255, 255, 255, {opacity})), 
-#                     url("{encoded_string}");
-#         background-size: cover;
-#         background-repeat: no-repeat;
-#         background-attachment: fixed
-#         background-position: center;
-#         min-height: 100vh;
-#         color: black;
-#     }}
-#     </style>
-#     """
-#     st.markdown(bg_css, unsafe_allow_html=True)
-# add_bg_from_local("bg2.png", opacity=0.1)
-
 # Display Selectbox for Login and Sign Up 
 st.title("Air Quality Index Visualization :night_with_stars:")
 st.write("---")
